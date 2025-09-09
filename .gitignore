@@ -1,0 +1,29 @@
+# Ignorar node_modules em qualquer nível
+**/node_modules/
+
+# Logs em qualquer pasta
+**/logs/
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+
+# Diretórios de build e configs locais
+**/dist/
+**/dist-ssr/
+**/*.local
+
+# Configurações de editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# Arquivos de solução do Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
