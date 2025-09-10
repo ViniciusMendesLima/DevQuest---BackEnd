@@ -1,9 +1,15 @@
 const http = require('http');
 
 const server = http.createServer((req, res)=> {
-    res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
+
+    if(req.url === '/'){
+        res.statusCode = 200;
+        res.end('Home page batata')
+    } else if(req.url === '/about'){
+        res.statusCode = 200;
+        res.end('About page')
+    }
 })
 
 server.listen(3000, ()=> {
