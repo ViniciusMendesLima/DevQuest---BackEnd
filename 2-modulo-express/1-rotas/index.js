@@ -9,6 +9,13 @@ app.get("/about", (req, res) => {
   res.send("About page");
 });
 
+app.get("/usuarios/:name", (req,res) => {
+  const name = req.params.name;
+  res.send(`Este é o perfil do usuário ${name}`)
+  
+
+})
+
 app.use((req, res) => {
   res.status(404).send("Page not found");
 });
